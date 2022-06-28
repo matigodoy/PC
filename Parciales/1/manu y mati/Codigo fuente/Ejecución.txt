@@ -1,0 +1,4 @@
+1- gcc -c -Wall -pedantic shared.c -o shared.o
+2- gcc -c -Wall -pedantic buffer.c -o buffer.o
+3- gcc -pthread -Wall -pedantic main.c shared.o buffer.o -lrt
+4- ./a.out

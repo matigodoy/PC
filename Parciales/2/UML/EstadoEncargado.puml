@@ -1,0 +1,14 @@
+@startuml EstadoEncargado
+(*)-[#teal,bold]-> [createGame()] Preparado
+-[#teal,bold]-> [initializeThreads()] Trabajando
+
+If "tiempoDeJuego > 0" then
+	-[#green,dashed]-> [recieveCall()] Atendiendo
+	-[#blue,dashed]-> [giveOrder()] Dando orden
+	-[#purple,dashed]-> [charge()] Cobrando
+	left-[#yellow,dashed]-> Trabajando
+else
+-[#red,dashed]-> [showPerformance()] Cerrando
+Endif
+-[#red,bold]-> (*)
+@enduml

@@ -1,0 +1,11 @@
+@startuml EstadoTelefono
+(*)-[#red,bold]-> [tunOn()] Encendido
+-[#blue,bold]-> [ringing()] Sonando
+If "Contestado" then
+	-[#green,dashed]-> [call()] Atendido
+	-[#green,bold]-> (*)
+else
+-[#red,dashed]->No Contestado 
+Endif
+-[#red,bold]-> (*)
+@enduml

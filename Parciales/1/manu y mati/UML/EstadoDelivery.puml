@@ -1,0 +1,10 @@
+@startuml EstadosDelivery
+(*)-[#blue,bold]-> [prepairing()] Preparado
+-[#green,dashed]-> [recieveOrder()] Recibiendo
+-[#green,dashed]-> [deliverOrder()] Entregando
+-[#geren,dashed]-> [deliverMoney()] Pagando
+-[#teal,dashed]->(*)
+Pagando -[#blue,bold]-> [waitOrder()] Esperando
+-[#red,bold]->[recieveOrder()] Recibiendo
+-[#green,bold]-> (*)
+@enduml

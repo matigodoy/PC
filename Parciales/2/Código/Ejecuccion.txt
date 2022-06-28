@@ -1,0 +1,11 @@
+Trabajo Práctico N2: 
+- De Aragón, Juan Manuel
+- Godoy Cabrera, Lucas Matias
+
+
+========= E J E C U C I Ó N ==========
+Ejecutar en shell: gcc -pthread -lrt main.c
+
+
+========= C L E A N S E M A F O R O S  ==========
+Ejecutar en shell: gcc -pthread -lrt borrarTodo.c

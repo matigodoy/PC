@@ -1,0 +1,7 @@
+@startuml EstadosCocinero
+(*)-right[#red,bold]-> [prepairing()] Preparado
+-right[#blue,bold]-> [recieveOrder()] Recibiendo
+-down[#yellow,bold]-> [cook()] Cocinando
+-left[#purple,bold]-> [deliverOrder()] Entregando
+-down[#green,bold]-> (*)
+@enduml
